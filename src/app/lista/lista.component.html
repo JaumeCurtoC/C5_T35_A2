@@ -1,0 +1,19 @@
+<div class="container" *ngIf="clientes.length>0">
+
+  <hr>
+
+  <h1 class="text-center">Listado Clientes</h1>
+
+  <table class="table">
+    <tr>
+      <th>Nombre</th>
+      <th>Email</th>
+      <th>Mensaje</th>
+    </tr>
+    <tr class="lineado" *ngFor="let item of clientes;" >
+      <td>{{item.nombre}}</td>
+      <td>{{item.email}}</td>
+      <td>{{item.mensaje}}</td>
+    </tr>
+  </table>
+</div>
